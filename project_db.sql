@@ -1,0 +1,11 @@
+SHOW DATABASES;
+CREATE DATABASE project_db;
+USE project_db;
+CREATE TABLE animals (id int(11), name VARCHAR(20), color VARCHAR(20), height VARCHAR(20), weight VARCHAR(20));
+Insert INTO animals (id, name, color, height, weight) Values (1, "lions", "gold", "4 ft", "420 lbs");
+Insert INTO animals (id, name, color, height, weight) Values (2, "tigers", "orange and black", "4 ft", "670 lbs");
+Insert INTO animals (id, name, color, height, weight) Values (3, "rhinos", "gray", "6 ft", "5000 lbs");
+Insert INTO animals (id, name, color, height, weight) Values (4, "elephants", "gray", "11 ft", "13000 lbs");
+Insert INTO animals (id, name, color, height, weight) Values (5, "giraffes", "orange and brown", "20 ft", "1800 lbs");
+SELECT * FROM animals;
+SHOW TABLES;
