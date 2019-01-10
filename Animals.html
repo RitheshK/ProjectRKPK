@@ -105,10 +105,42 @@ body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }	
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 </style>
 </head>
 
 <body>
+  <ul>
+  <li><a class="active" href="Animals.html">Home</a></li>
+  <li><a href="lion.html">Lions</a></li>
+  <li><a href="tiger.html">Tigers</a></li>
+  <li><a href="rhino.html">Rhinos</a></li>
+  <li><a href="elephant.html">Elephants</a></li>
+  <li><a href="giraffe.html">Giraffes</a></li>
+</ul>
 <h1>Animals</h1>
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -187,12 +219,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
 </script>
-<p>
-<a href="lion.html">lions</a></br>
-<a href="tiger.html">tigers</a></br>
-<a href="rhino.html">rhinos</a></br>
-<a href="elephant.html">elephants</a></br>
-<a href="giraffe.html">giraffes</a></br>
-</p>
+
+
 </body>
