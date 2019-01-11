@@ -1,5 +1,5 @@
 <?php
-  
+    include_once 'Animals.html';
     require_once 'logi.php';
     echo $_Post['myTest'];
 
