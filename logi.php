@@ -1,7 +1,7 @@
 <?php
 
 $host = "127.0.0.1";
-$user = "Rithesh Kannan";
+$user = "rithesh";
 $pass = "";
 $db = "project_db";
 $port = 3306;
