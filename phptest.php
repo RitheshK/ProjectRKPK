@@ -5,9 +5,9 @@
 
     $query = "SELECT * FROM animals";
     $result = mysqli_query($connection, $query);
-
+    echo "<table><tr><th>Name</th><th>Color</th><th>Height</th><th>Weight</th></tr>";
     while ($row = mysqli_fetch_assoc($result)) {
-         echo "The Name is: " . $row['name'] . " and its color is: " . $row['color'] . " and its height is: " .$row['height'] . " and its weight is: " .$row['weight'] . "<br>";
+         echo "<tr><td>".$row["name"]."</td><td>".$row["color"]."</td><td>".$row["height"]."</td><td>".$row["weight"]."</td></tr>" ;
     }
-    
+    echo "</table>";
 ?>

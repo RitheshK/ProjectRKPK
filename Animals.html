@@ -133,6 +133,8 @@ li a:hover {
 </head>
 
 <body>
+  <p id="demo"></p>
+
   <ul>
   <li><a class="active" href="Animals.html">Home</a></li>
   <li><a href="lion.html">Lions</a></li>
@@ -219,7 +221,8 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
 </script>
 <form action = 'phptest.php' method = "post">
 		<select name = "myTest">
